@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Algoverse — học Stack, Queue, Infix/Postfix và BFS qua mô phỏng trực quan và đề trắc nghiệm. Miễn phí, chạy trên trình duyệt."
+    />
+    <meta name="theme-color" content="#020617" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:url" content="https://learner-app.vercel.app/" />
+    <meta property="og:title" content="Algoverse — Học cấu trúc dữ liệu trực quan" />
+    <meta
+      property="og:description"
+      content="Mô phỏng Stack, Queue, chuyển Infix sang Postfix, BFS trên lưới và ôn tập trắc nghiệm."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Algoverse — Học cấu trúc dữ liệu trực quan" />
+    <meta
+      name="twitter:description"
+      content="Mô phỏng Stack, Queue, Infix/Postfix, BFS và đề trắc nghiệm trên trình duyệt."
+    />
+    <title>Algoverse — Học cấu trúc dữ liệu trực quan</title>
+    <script>
+      (function () {
+        try {
+          var k = 'algoverse-theme';
+          var t = localStorage.getItem(k);
+          if (t !== 'light' && t !== 'dark')
+            t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.classList.toggle('dark', t === 'dark');
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
